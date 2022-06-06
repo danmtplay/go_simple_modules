@@ -1,6 +1,4 @@
-package main
-
-import "fmt"
+package merge
 
 func uniqueNames(a, b []string) []string {
 	temp := append(a, b...)
@@ -15,11 +13,4 @@ func uniqueNames(a, b []string) []string {
 		result = append(result, letter)
 	}
 	return result
-}
-
-func main() {
-	// should print Ava, Emma, Olivia, Sophia
-	fmt.Println(uniqueNames(
-		[]string{"Ava", "Emma", "Olivia"},
-		[]string{"Olivia", "Sophia", "Emma"}))
 }
